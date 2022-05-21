@@ -8,7 +8,7 @@ A látóteret felosztottuk 9 db, egyenként 13 mezőt tartalmazó részre. Minde
 ![kép](https://user-images.githubusercontent.com/82893067/169656005-6dc47363-b6f4-4ae4-9205-2beaf1618d4c.png)
 
 <br>
-A látómező egyes részeiben a különböző értékű mezők különböző súlyokkal számítanak bele. Összesen 14 súlyt határoztunk meg az alábbi kritériumok szerint:
+A látómező egyes részeiben a különböző értékű mezők különböző súlyokkal számítanak bele. Összesen 14 súlyt határoztunk meg az alábbi kritériumok szerint:<br>
 ⋅⋅*Étel értékei (3)
 *Mező távolsága (5)
 *Fal
