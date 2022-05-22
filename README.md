@@ -24,6 +24,9 @@ A látómező egyes részeiben a különböző értékű mezők különböző s�
 * Középre tartás
 <!-- <br> -->
 A súlyok segítségével meghatározható az egyes látómező egységek összértéke. Amelyiknek a legnagyobb az értéke, annak az irányába mozdul a játékos. 9 mozgásirány van, hiszen az x és y irányba is 3 féle (+,-,0) lehetséges értéket kaphat. 
+<br>
+<br>
+Ahhoz, hogy a játékos beragadását egy-egy lépésciklusba megakadályozzuk, vizsgáljuk az előző mezőket amelyeken járt, és ha ismétlődést fedezünk fel, egy random lépéssel kibillentjük ebből a helyzetből. Továbbá az is egy jele lehet a beragadásnak, ha hosszú ideje nem tudott megenni semmit, ezt is számon tartjuk, és a 10. eredménytelen lépés után is véletlenszerű irányba mozdul.
 
 ## Súlyok tanítása
 A súlyok tanítása genetikus algoritmussal történt. A kezdeti generációban 8 egyedet definiáltunk különböző súlyokkal. Minden egyedre 10 játékot futtattunk 300 tick tartammal, az eredeti 4, illetve egy saját kialakítású pályán, mindegyiken 2 alkalommal. A 10 játék során elért összpontszám adja az egyed fitneszértékét. 
@@ -41,14 +44,15 @@ self.params=[
 ```
 <br>
 A szelekció során a legjobb 4 egyed kerül kiválasztásra fitneszérték alapján.<br>
-A kiválasztott egyedekben a különbőző súlyokat 14 biten binárisan ábrázoltuk, majd ebben a formában megtörténhetett a közülük kisorsolt két páron az egypontos keresztezés.
+A kiválasztott egyedekben a különböző súlyokat 14 biten binárisan ábrázoltuk, majd ebben a formában megtörténhetett a közülük kisorsolt két páron az egypontos keresztezés.
+<br>
 <br>
 
 ![kép](https://user-images.githubusercontent.com/82893067/169661645-2df68e88-6047-4656-bcea-bd3dba9c0936.png)
 <br>
-A keresztezés után az egyedek egy-egy súlyában 10°-os valószínűséggel mutálódik az egyik bit. <br>
+A keresztezés után az egyedek egy-egy súlyában 10%-os valószínűséggel mutálódik az egyik bit. <br>
 Az így kialakult 4 egyed, illetve az előző generációból szelekcióval kiválasztott 4 egyed alkotja a következő generációt.
-Az algoritmust minél tovább futtatjuk, annál hatékonyabb és pomntosabb eredményt kapunk. Azt az egyedet, melyet a játékosunknak végül választottunk, fél napos futás után határoztuk meg.
+Az algoritmust minél tovább futtatjuk, annál hatékonyabb és pontosabb eredményt kapunk. Azt az egyedet, melyet a játékosunknak végül választottunk, fél napos futás után határoztuk meg.
 
 ## A játék futtatása saját pályán négy saját játékossal
 
