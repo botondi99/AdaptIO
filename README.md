@@ -60,4 +60,12 @@ Az algoritmust minél tovább futtatjuk, annál hatékonyabb és pontosabb eredm
 https://user-images.githubusercontent.com/82893067/169662198-57820a03-9738-4b50-adf6-1bd956c67658.mp4
 
 ## Fájlok
-A repoba felröltésre került az általunk készített pálya, a bemutatás során előadott prezentáció, illetve a tanuló- és a játékprogram.
+A repoba felröltésre került az általunk készített pálya, a bemutatás során előadott prezentáció, illetve a tanuló- és a játékprDependencies
+
+
+## Dependencies
+
+* numpy
+* random
+* time
+* json
